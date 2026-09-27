@@ -1,5 +1,7 @@
 # p-Hub-Median – wer profitiert vom Rabatt? – Streamlit-Demo
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-drehscheiben-demo.streamlit.app/)**
+
 Sechstes und letztes Stück der **Standortplanungs-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", Kind von [standortplanung-demo](https://github.com/sebastian-hanisch/standortplanung-demo) (Standortproblem ohne Kapazität):
 anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **ein** Modell – **p-Hub-Median mit Single Allocation** – an einem wachsenden Beispiel. $p$ von $n$ Knoten werden zu **Hubs**; jeder übrige Knoten wird **genau einem** Hub zugeordnet. Der Fluss zwischen zwei Knoten läuft über ihre Hubs: Sammlung zum eigenen Hub, dann die Hub-zu-Hub-Strecke mit einem **Rabatt α** (Skaleneffekt gebündelter Fernverkehrsströme), dann Verteilung zum Ziel.
 Wer die Hubs **ohne Rücksicht auf den Rabatt** wählt (klassischer p-Median auf der Gesamtnachfrage je Knoten), zahlt drauf – und **gegen die naive Erwartung wächst die Lücke mit weniger Rabatt**, nicht mit mehr.
