@@ -28,7 +28,7 @@ def dist_standard():
 
 
 def test_standard_net_naive_against_joint(standard):
-    """Standardnetz (10 Knoten, 2 Hubs, Rabattfaktor 50 %, Seed 6): naive Hubwahl (Knoten 2, 7) kostet 131 077; gemeinsam optimiert (6, 7) kostet 125 455 - 4,48 % Mehrkosten."""
+    """Standardnetz (10 Knoten, 2 Hubs, Rabattfaktor 50 %, Seed 6): naive Hubwahl (Knoten 3, 8; 0-indiziert 2, 7) kostet 131 077; gemeinsam optimiert (Knoten 7, 8; 0-indiziert 6, 7) kostet 125 455 - 4,48 % Mehrkosten."""
     a = standard
     assert (a["naive"].hubs, a["joint"].hubs) == ((2, 7), (6, 7))
     assert (a["naive"].cost, a["joint"].cost) == (PCT(131077.0, abs=0.5), PCT(125454.5, abs=0.5)) and a["gap"] == PCT(4.482, abs=0.005)

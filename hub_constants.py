@@ -26,9 +26,9 @@ PRESETS = {
 }
 # Jede Zahl in diesen Texten ist in tests/test_claims.py belegt.
 PRESET_HELP = {
-    "🗺️ Standardnetz": "10 Knoten, 2 Hubs, Rabatt 50 %: die naive Hubwahl (Knoten 2, 7) kostet 131 077, die gemeinsam optimierte (6, 7) nur 125 455 - 4,48 % Mehrkosten. Die reine Neuzuordnung schließt davon nur 2,48 Punkte, den Rest holt erst die andere Hubwahl.",
+    "🗺️ Standardnetz": "10 Knoten, 2 Hubs, Rabatt 50 %: die naive Hubwahl (Knoten 3, 8) kostet 131 077, die gemeinsam optimierte (7, 8) nur 125 455 - 4,48 % Mehrkosten. Die reine Neuzuordnung schließt davon nur 2,00 Punkte, den Rest holt erst die andere Hubwahl.",
     "🚫 Kein Rabatt": "Rabattfaktor 100 % (kein Rabatt): dieselben Knoten, aber die naive Wahl ist jetzt 12,33 % teurer statt 4,48 % - ohne Rabatt kostet eine falsche Hubwahl mehr, nicht weniger.",
-    "💸 Starker Rabatt": "Rabattfaktor 20 % (starker Rabatt): naiv und gemeinsam optimiert wählen dieselben Hubs (2, 7) - bei starkem Rabatt ist die Hub-zu-Hub-Strecke so billig, dass die Hubwahl kaum noch etwas kostet.",
-    "🧮 Kleinnetz mit exaktem Optimum": "9 Knoten, 2 Hubs, Seed 11: das exakte Optimum (Knopf im Abschnitt 'Wie weit ist die Lokalsuche vom Optimum?') liegt bei 107 179 mit den Hubs 2 und 8; die Lokalsuche trifft es, die naive Wahl (2, 5) ist 18,19 % teurer.",
+    "💸 Starker Rabatt": "Rabattfaktor 20 % (starker Rabatt): naiv und gemeinsam optimiert wählen dieselben Hubs (3, 8) - bei starkem Rabatt ist die Hub-zu-Hub-Strecke so billig, dass die Hubwahl kaum noch etwas kostet.",
+    "🧮 Kleinnetz mit exaktem Optimum": "9 Knoten, 2 Hubs, Seed 11: das exakte Optimum (Knopf im Abschnitt 'Wie weit ist die Lokalsuche vom Optimum?') liegt bei 107 179 mit den Hubs 3 und 9; die Lokalsuche trifft es, die naive Wahl (3, 6) ist 18,19 % teurer.",
     "☝️ Ein Hub": "Nur 1 Hub: naive und gemeinsame Wahl sind immer identisch - ohne einen zweiten Hub gibt es keine Hub-zu-Hub-Strecke und keinen Rabatt-Effekt, der eine falsche Wahl bestrafen könnte.",
 }

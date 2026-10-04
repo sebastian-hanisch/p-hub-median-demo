@@ -24,7 +24,7 @@ Kosten eines Flusses zwischen $i$ und $j$ bei Hub-Zuordnung $k=\text{hub}(i)$, $
 
 Jede hier genannte Zahl ist in `tests/test_claims.py` belegt: Standardnetz und Beispielnetze über ihre Seeds, Verteilung über 40 feste Netze (Seeds ab 100000), Vergleich mit dem exakten Optimum auf Kleinnetzen. Standard: 10 Knoten, 2 Hubs, Rabattfaktor 50 %, Seed 6.
 
-**Standardnetz.** Die naive Hubwahl kostet **131 077**, die gemeinsam optimierte **125 455** – die naive Planung ist um **4,48 %** teurer. Die reine Neuzuordnung (gleiche Hubs, bessere Zuordnung) schließt davon nur 2,48 Punkte (128 569) – den Rest holt erst die andere Hubwahl. Die Kostenaufteilung verschiebt sich von Hub-zu-Hub (31 724 → 21 166) zu Sammlung/Verteilung (je 49 676 → 52 144).
+**Standardnetz.** Die naive Hubwahl kostet **131 077**, die gemeinsam optimierte **125 455** – die naive Planung ist um **4,48 %** teurer. Die reine Neuzuordnung (gleiche Hubs, bessere Zuordnung) schließt davon nur 2,00 Punkte (128 569; 2,48 Punkte bleiben) – den Rest holt erst die andere Hubwahl. Die Kostenaufteilung verschiebt sich von Hub-zu-Hub (31 724 → 21 166) zu Sammlung/Verteilung (je 49 676 → 52 144).
 
 **Über 40 Netze:** die naive Wahl ist im Mittel **3,56 %** teurer (Median 2,03 %, schlechtestes Netz 14,67 %); in **11 von 40** Netzen ist sie bereits optimal. Die Neuzuordnung allein schließt im Mittel nur **10,6 %** dieser Mehrkosten.
 
@@ -64,3 +64,7 @@ Ein Rabattfaktor für alle Hub-Paare (reale Netze haben unterschiedliche Auslast
 | `tests/` | 175 Tests: Szenario, Kostenformel von Hand, ALA/Lokalsuche (keine Verschlechterung, Regression für eine gefundene Stale-Zuordnung), MILP gegen Brute-Force, Presets, Zahlen (`test_claims.py`), App |
 
 Lokal starten: `pip install -r requirements.txt`, dann `streamlit run app.py`; Tests: `pip install -r requirements-dev.txt`, dann `python -m pytest tests`.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Standortplanung: von der Wahl zum Wettbewerb](https://sebastianhanisch.net/konzepte-standortplanung.html).
