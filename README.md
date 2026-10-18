@@ -61,7 +61,7 @@ Ein Rabattfaktor für alle Hub-Paare (reale Netze haben unterschiedliche Auslast
 | `hub_exact.py` | MILP-Linearisierung der Hub-zu-Hub-Kopplung (HiGHS), Brute-Force für Tests |
 | `hub_evaluation.py`, `hub_visualization.py` | Analyse, Reihe über α, Verteilung, Kostenaufteilung, Exakt-Vergleich; Karte, Kostenbalken, Reihe |
 | `hub_presets.py`, `hub_constants.py` | Presets, Permalink, Regler-Grenzen, feste Seeds |
-| `tests/` | 175 Tests: Szenario, Kostenformel von Hand, ALA/Lokalsuche (keine Verschlechterung, Regression für eine gefundene Stale-Zuordnung), MILP gegen Brute-Force, Presets, Zahlen (`test_claims.py`), App |
+| `tests/` | 191 Tests: Szenario, Kostenformel von Hand, ALA/Lokalsuche (keine Verschlechterung, Regression für eine gefundene Stale-Zuordnung), MILP gegen Brute-Force, Presets, Zahlen (`test_claims.py`), App |
 
 Lokal starten: `pip install -r requirements.txt`, dann `streamlit run app.py`; Tests: `pip install -r requirements-dev.txt`, dann `python -m pytest tests`.
 
